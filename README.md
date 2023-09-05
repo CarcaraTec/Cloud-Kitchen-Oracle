@@ -7,7 +7,7 @@
 
 ## ✏️ **CHALLENGE**
 
-Nowadays many pilots work as "freelancers" and do not operate only one aircraft/fleet, which makes it difficult to recognize certain equipment and software versions installed in the aircraft. In addition, the pilot does not always have quick access to all manuals and documents of the aircraft, which hinders his knowledge about the aircraft and its capabilities.
+
 
 ## 📅 **SPRINTS SCHEDULE**
 
@@ -25,33 +25,6 @@ Nowadays many pilots work as "freelancers" and do not operate only one aircraft/
 
 
 ## 🎯 **BACKLOG**
-
-* **SPRINT 1**
-    * Database Modeling
-    * Creating the Database in the Cloud
-    * Consultation/driver screen with some options    
-
-
-## 📔 **FUNCTIONAL REQUIREMENTS**
-
- • Use of APIs for future integration with mobile platform systems <br> 
- • Access to the customer database (user, password and equipment) <br> 
- •	Users must have different profiles (administrator, editing and query) <br> 
- •	Possibility of applying selection filters (by item category) <br> 
- •	Visualization of PDF files in the App and possibility of export in the same format, with registration of the file generation date and the user. <br>
-
-
-## 🎥 **Mockup**
-
-
-
-
-## 🤓 **DATA MODELING**
-
-
-## 📉 **BURNDOWN**
-
-
 
 ## 💻 **TECHNOLOGY AND TOOLS**
 
@@ -82,8 +55,3 @@ Nowadays many pilots work as "freelancers" and do not operate only one aircraft/
 - `Visual Studio code`
 
 </details>
-
-## 👪 **TEAM**
-
-![team](https://github.com/CarcaraTec/Embraer/blob/8b3722a47c397ac5c7e77f9957fce580bacce68c/Documents/images/Team.png)
-
