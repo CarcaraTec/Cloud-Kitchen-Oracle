@@ -1,0 +1,6 @@
+[submodule "Cloud-Kitchen-Front"]
+	path = Cloud-Kitchen-Front
+	url = https://github.com/CarcaraTec/Cloud-Kitchen-Front
+[submodule "Cloud-Kitchen_Back"]
+	path = Cloud-Kitchen_Back
+	url = https://github.com/CarcaraTec/Cloud-Kitchen_Back
