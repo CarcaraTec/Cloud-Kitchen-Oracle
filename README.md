@@ -26,6 +26,9 @@ Create a comprehensive online platform for efficient restaurant management, offe
 
 ## 🎯 **BACKLOG**
 
+- Develop an supplies panel
+- Develop notification of low quantity supplies
+
 ## 💻 **TECHNOLOGY AND TOOLS**
 
 <details>
