@@ -6,7 +6,7 @@
 
 
 ## ✏️ **CHALLENGE**
-
+Create a comprehensive online platform for efficient restaurant management, offering features such as dashboards, graphs, reports, and personnel, supplier, and inventory management. The goal is to assist restaurant owners in addressing challenges like cost control, team management, and inventory, aiming to enhance their operations.
 
 
 ## 📅 **SPRINTS SCHEDULE**
