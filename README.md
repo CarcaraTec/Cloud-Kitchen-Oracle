@@ -26,8 +26,15 @@ Create a comprehensive online platform for efficient restaurant management, offe
 
 ## 🎯 **BACKLOG**
 
-- Develop an supplies panel
-- Develop notification of low quantity supplies
+- Supplies panel
+- Notification of low quantity supplies
+- Supplies dashboard
+- Daily revenue panel
+- People management dashboard
+- People/customer dashboard
+- Employee management dashboard
+- Employee dashboard
+- Generate reports
 
 ## 💻 **TECHNOLOGY AND TOOLS**
 
