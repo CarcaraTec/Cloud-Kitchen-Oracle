@@ -30,6 +30,9 @@ Create a comprehensive online platform for efficient restaurant management, offe
 - Notification of low quantity supplies
 - Supplies dashboard
 - Daily revenue panel
+- Booking control
+- Customer feedback control
+- Performance analysis control
 - Supplier panel
 - People management panel
 - People/customer dashboard
