@@ -8,6 +8,22 @@
 ## ✏️ **CHALLENGE**
 Create a comprehensive online platform for efficient restaurant management, offering features such as dashboards, graphs, reports, and personnel, supplier, and inventory management. The goal is to assist restaurant owners in addressing challenges like cost control, team management, and inventory, aiming to enhance their operations.
 
+Functional Requirements
+
+    Develop an organizational panel of personnel and suppliers and inputs;
+    Develop an employee flow dashboard, people flow, inventory, best selling dishes;
+    Develop a comparator of customers x staff x stock, another comparator of predictability of inputs for preparing dishes;
+    In the comparator, check the inputs and present what needs to be purchased, in the personnel comparator, consider the flow of customers.
+
+Non-Functional Requirements
+
+    The website's response time must be below 1000ms in 99.99% of the requests;
+    The application's logging mechanism must generate the trails in JSON format (optional);
+    The system must contain metrics that help to observe its behavior: Quantity of requests, response time, quantity and percentage of failures when obtaining data from Golden Sources.
+
+
+## Solution
+A web-based platform designed to streamline restaurant management through intuitive graphic panels and interactive dashboards. This platform offers insights into employee performance, inventory management, and customer interactions.
 
 ## 📅 **SPRINTS SCHEDULE**
 
@@ -39,6 +55,12 @@ Create a comprehensive online platform for efficient restaurant management, offe
 - Employee management dashboard
 - Employee dashboard
 - Generate reports
+
+
+
+
+## Burndown 
+![Alt text](image.png)
 
 ## 💻 **TECHNOLOGY AND TOOLS**
 
