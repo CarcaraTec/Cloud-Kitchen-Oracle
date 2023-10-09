@@ -98,8 +98,6 @@ A web-based platform designed to streamline restaurant management through intuit
     </tr>
   </tbody>
 </table>
-|
-
 
 ## Mockup
 Painel Insumos
