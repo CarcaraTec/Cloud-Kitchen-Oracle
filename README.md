@@ -45,7 +45,7 @@ A web-based platform designed to streamline restaurant management through intuit
   <thead>
     <tr>
       <th>User Story</th>
-      <th>Prioridade</th>
+      <th>Priority</th>
     </tr>
   </thead>
   <tbody>
