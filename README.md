@@ -138,3 +138,6 @@ Painel Insumos
 - `Visual Studio code`
 
 </details>
+
+## Modelagem de dados 📊
+![Alt text](https://github.com/CarcaraTec/Cloud-Kitchen-Oracle/blob/main/Cloud_Kitchen_Data/Modelagem.jpeg)
