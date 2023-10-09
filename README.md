@@ -41,22 +41,69 @@ A web-based platform designed to streamline restaurant management through intuit
 
 
 ## 🎯 **BACKLOG**
+<table>
+  <thead>
+    <tr>
+      <th>User Story</th>
+      <th>Prioridade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Inventory and Supplies Management Panel</p>
+      As a restaurant owner, I need a supplies panel to monitor the status of my inventory, including expiration dates, quantity, and the flow of items in and out.</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>
+        <p>Daily Revenue Panel</p>
+          As a restaurant owner, I need a Revenue Panel to visualize the flow of monetary operations.
+      </td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>
+        <p>Vendor Panel</p>
+        As a restaurant owner, I need a vendor panel so that I can see the best choice of supplier according to my needs.
+      </td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>
+        <p>Inventory and Supplies Dashboard</p>
+        As a restaurant owner, I need a supplies dashboard to visualize and quantify the stock needs.
+      </td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>
+        <p>Employee Dashboard</p>
+        As a restaurant owner, I want an employee dashboard so that I can understand the performance of the employees and their availability.
+      </td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>
+        <p>Employee Management Panel</p>
+        As a restaurant owner, I want a people panel so that I can understand the labor resources I have to choose from.
+      </td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>
+        <p>People/Customers Dashboard</p>
+        As a restaurant owner, I need a people/customers dashboard to understand the required personnel for the opening hours.
+      </td>
+      <td>Low</td>
+    </tr>
+  </tbody>
+</table>
+|
 
-- Supplies panel
-- Notification of low quantity supplies
-- Supplies dashboard
-- Daily revenue panel
-- Booking control
-- Customer feedback control
-- Performance analysis control
-- Supplier panel
-- People management panel
-- People/customer dashboard
-- Employee management dashboard
-- Employee dashboard
-- Generate reports
 
-
+## Mockup
+Painel Insumos
+![Alt text](image-1.png)
 
 
 ## Burndown 
