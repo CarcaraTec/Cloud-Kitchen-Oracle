@@ -1,0 +1,95 @@
+﻿Views utilizadas na geração de painéis e relatórios
+
+
+--View V_ESTOQUE
+SELECT i.cod_ingrediente
+        ,i.nome_ingrediente
+        ,i.unidade_medida
+        ,i.categoria_ingrediente
+        ,i.capacidade
+        ,i.estoque_minimo
+        ,COALESCE(SUM(e.quantidade_produto), 0) AS quantidade
+FROM tb_ingredientes i
+LEFT JOIN tb_ingrediente_estoque ie ON i.cod_ingrediente = ie.cod_ingrediente
+LEFT JOIN tb_estoque e ON ie.cod_estoque = e.cod_estoque
+GROUP BY i.cod_ingrediente
+        ,i.nome_ingrediente
+        ,i.unidade_medida
+        ,i.categoria_ingrediente
+        ,i.capacidade
+        ,i.estoque_minimo
+ORDER BY i.cod_ingrediente
+
+
+
+
+
+
+--View V_RANK_VENDA_PRODUTO
+WITH ProdutosMaisVendidos
+AS (
+        SELECT COD_PRATO
+                ,NOME_PRATO
+                ,TO_CHAR(DATA_VENDA, 'D') AS DIA_DA_SEMANA_NUM
+                ,TO_CHAR(DATA_VENDA, 'Day') AS DIA_DA_SEMANA
+                ,SUM(QUANTIDADE) AS QUANTIDADE_TOTAL
+                ,SUM(VALOR_ITEM) AS VALOR_TOTAL_PRODUTO
+        FROM V_VENDAS
+        WHERE TO_NUMBER(TO_CHAR(DATA_VENDA, 'D')) = 1
+                AND DATA_VENDA BETWEEN TO_DATE('2023-09-01', 'YYYY-MM-DD')
+                        AND TO_DATE('2023-09-30', 'YYYY-MM-DD')
+        GROUP BY COD_PRATO
+                ,NOME_PRATO
+                ,TO_CHAR(DATA_VENDA, 'D')
+                ,TO_CHAR(DATA_VENDA, 'Day')
+        ORDER BY QUANTIDADE_TOTAL DESC
+        )
+SELECT PMV.COD_PRATO
+        ,PMV.NOME_PRATO
+        ,PMV.DIA_DA_SEMANA_NUM
+        ,PMV.DIA_DA_SEMANA
+        ,PMV.QUANTIDADE_TOTAL
+        ,PMV.VALOR_TOTAL_PRODUTO
+        ,(
+                PMV.VALOR_TOTAL_PRODUTO / (
+                        SELECT SUM(VALOR_TOTAL_PRODUTO)
+                        FROM ProdutosMaisVendidos
+                        )
+                ) * 100 AS IMPACTO_PORCENTAGEM
+FROM ProdutosMaisVendidos PMV
+ORDER BY QUANTIDADE_TOTAL DESC
+
+
+
+
+
+
+--View V_VENDAS
+SELECT TB_ITEM_VENDA_DIARIA."COD_ITEM_VENDA"
+        ,TB_ITEM_VENDA_DIARIA."COD_VENDA"
+        ,TB_ITEM_VENDA_DIARIA."COD_PRATO"
+        ,TB_ITEM_VENDA_DIARIA."QUANTIDADE"
+        ,TB_VENDA_DIARIA.DATA_VENDA
+        ,TB_CLIENTE.NOME AS NOME_CLIENTE
+        ,TB_CARDAPIO.NOME_PRATO
+        ,TB_CARDAPIO.VALOR_ITEM
+        ,TB_CARDAPIO.VALOR_ITEM * TB_ITEM_VENDA_DIARIA.QUANTIDADE AS VALOR_TOTAL
+FROM TB_ITEM_VENDA_DIARIA
+INNER JOIN TB_VENDA_DIARIA ON TB_VENDA_DIARIA.COD_VENDA = TB_ITEM_VENDA_DIARIA.COD_VENDA
+INNER JOIN TB_CLIENTE ON TB_CLIENTE.COD_CLIENTE = TB_VENDA_DIARIA.COD_CLIENTE
+INNER JOIN TB_CARDAPIO ON TB_ITEM_VENDA_DIARIA.COD_PRATO = TB_CARDAPIO.COD_PRATO
+
+
+
+
+--View VIEW_DADOS_VENDA
+SELECT ivd.quantidade AS quantidade_item_venda
+        ,vd.total_pagamento AS total_pagamento_venda
+        ,c.cod_comanda AS id_comanda
+        ,c.horario_abertura AS horario_abertura_comanda
+        ,c.horario_fechamento AS horario_fechamento_comanda
+        ,f.nome_funcionario AS nome_funcionario
+FROM tb_item_venda_diaria ivd
+INNER JOIN tb_venda_diaria vd ON ivd.cod_venda = vd.cod_venda
+INNER JOIN tb_comanda c ON ivd.cod_comanda = c.cod_comanda
+INNER JOIN tb_funcionario f ON c.cod_funcionario = f.cod_funcionario
