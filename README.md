@@ -144,4 +144,4 @@ Painel Insumos
 </details>
 
 ## Modelagem de dados 📊
-![Alt text](https://github.com/CarcaraTec/Cloud-Kitchen-Oracle/blob/main/Cloud_Kitchen_Data/Modelagem.jpeg)
+![Alt text](https://github.com/CarcaraTec/Cloud-Kitchen-Oracle/blob/main/Cloud_Kitchen_Data/ModelagemAPI.png)
