@@ -101,16 +101,21 @@ A web-based platform designed to streamline restaurant management through intuit
 
 ## Mockup
 Painel Insumos
-![Alt text](image-1.png)
-![Alt text](Cloud-Kitchen-sprint2.gif)
+![Alt text](images/image-1.png)
+Operações
+![Alt text](images/Cloud-Kitchen-sprint2.gif)
+Funcionários
+![Alt text](images/gif-sprint3.gif)
 
 
 
 ## Burndown 
 ### Sprint 1
-![Alt text](image.png)
+![Alt text](images/image.png)
 ### Sprint 2
-![Alt text](burndown-sprint2.png)
+![Alt text](images/burndown-sprint2.png)
+### Sprint 3
+![Alt text](images/burndown-sprint3.png)
 
 
 ## 💻 **TECHNOLOGY AND TOOLS**
