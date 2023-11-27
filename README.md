@@ -100,12 +100,14 @@ A web-based platform designed to streamline restaurant management through intuit
 </table>
 
 ## Mockup
-Painel Insumos
+Sprint 1
 ![Alt text](images/image-1.png)
-Operações
+Sprint 2
 ![Alt text](images/Cloud-Kitchen-sprint2.gif)
-Funcionários
+Sprint 3
 ![Alt text](images/gif-sprint3.gif)
+Sprint 4
+![Alt text](images/sprint4.gif)
 
 
 
@@ -116,6 +118,8 @@ Funcionários
 ![Alt text](images/burndown-sprint2.png)
 ### Sprint 3
 ![Alt text](images/burndown-sprint3.png)
+### Sprint 4
+![Alt text](images/burndown-sprint4.png)
 
 
 ## 💻 **TECHNOLOGY AND TOOLS**
@@ -150,3 +154,13 @@ Funcionários
 
 ## Modelagem de dados 📊
 ![Alt text](https://github.com/CarcaraTec/Cloud-Kitchen-Oracle/blob/main/Cloud_Kitchen_Data/ModelagemAPI.png)
+
+## Integrantes
+| Função                       | Usuário GitHub                                     | Nome                   |
+|------------------------------|----------------------------------------------------|------------------------|
+| Scrum Master                 | [UeresWally](https://github.com/UeresWally)         | Wallace Santos         |
+| Product Owner                | [WesFerreira](https://github.com/WesFerreira)       | Wesley Ferreira        |
+| Desenvolvedor Backend               | [alantrs](https://github.com/alantrs)               | Alan Araujo Rodrigues  |
+| Desenvolvedor Frontend               | [igorsuzuki99](https://github.com/igorsuzuki99)     | Igor Suzuki Kira       |
+| Desenvolvedor de Banco de Dados | [LucasMonteiiroo](https://github.com/LucasMonteiiroo) | Lucas Monteiro    |
+| Desenvolvedor Backend               | [Pedrolucasrd](https://github.com/Pedrolucasrd)     | Pedro Lucas Rodrigues  |
